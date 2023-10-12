@@ -10,7 +10,7 @@ const Footer = () => {
             </a>
         </div>
         <div className='flex justify-center'>
-            
+
             <div className=''>
             <h4 className='text-2xl uppercase mb-5'>About us</h4>
             <ul>

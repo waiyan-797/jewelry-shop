@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
      <>
         <div className="w-full overflow-x-hidden">
-            <Navbar />
+            {/*<Navbar />*/}
             <Bender/>
             <Footer/>
         </div>

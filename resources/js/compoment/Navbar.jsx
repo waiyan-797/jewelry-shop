@@ -3,6 +3,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 
 
 const Navbar = ()=>{
+
  return(
      <>
        <div className="fixed top-0 z-30 bg-white w-full h-20 flex items-center justify-between">
@@ -22,13 +23,18 @@ const Navbar = ()=>{
             <div className="w-1/3 flex justify-between">
                 <ul className=" w-fullitems-center mr-10 hidden lg:flex ">
                 <li><a href=""><BiSearch className="text-2xl"/></a></li>
-                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600"><a href="">HOME</a></li>
-                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600"><a href="">ABOUT</a></li>
-                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600"><a href="">CONTACT</a></li>
+                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600 actives"><a href="/">HOME</a></li>
+                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600 actives"><a href="/abouts">ABOUT</a></li>
+                    <li className="text-xl font-light mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600 actives"><a href="/contacts">CONTACT</a></li>
 
                    <div className="flex ">
                         <li className="text-xl font-light uppercase mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600"><a href="/login">Login</a></li>
                         <li className="text-xl font-light uppercase mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600"><a href="/register">Register </a></li>
+                       <li className="text-xl font-light uppercase mx-3 transition-all duration-100 hover:border-y-2 hover:border-amber-600">
+                           <form action="/logout" method="POST">
+                               <button type="submit">logout</button>
+                           </form> </li>
+
 
 
                    </div>

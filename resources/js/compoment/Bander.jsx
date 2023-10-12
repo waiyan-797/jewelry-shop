@@ -9,8 +9,6 @@ import logo7 from "../../img/card/logo-007.png";
 import logo8 from "../../img/card/logo-008.png";
 
 import $ from "jquery";
-import {useState} from 'react';
-import {useEffect} from "react";
 
 const Bender = ()=>{
 
